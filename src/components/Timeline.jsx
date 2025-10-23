@@ -39,7 +39,7 @@ export default function Timeline() {
   ];
 
   return (
-    <div className="min-h-screen flex items-end justify-center px-4 py-14">
+    <div className="flex items-end justify-center px-4 py-6">
       <div className="w-full max-w-9xl ">
         <div className="flex justify-between items-center relative">
           {/* horizontal line */}
@@ -54,7 +54,7 @@ export default function Timeline() {
                 {step.title}
               </h3>
               <p className="text-xs text-gray-400">{step.date}</p>
-              <p className="text-xs text-gray-500 mt-1 max-w-[12rem]">{step.description}</p>
+              <p className="text-xs text-gray-500 mt-1 max-w-48">{step.description}</p>
             </div>
           ))}
         </div>

@@ -5,11 +5,12 @@ import Timeline from './components/Timeline';
 function App() {
  
   return (
-
-    <>
-    <LatestNewsHeadline/>
+    <div className="min-h-screen flex flex-col">
+    <div className='flex-1 flex items-center justify-center'>
+      <LatestNewsHeadline/>
+    </div>
     <Timeline/>
-    </>
+    </div>
     
 
   )

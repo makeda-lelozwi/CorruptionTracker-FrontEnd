@@ -5,7 +5,7 @@ export default function Timeline() {
       title: "IMC on Political Killings Established",
       date: "14 May 2018",
       description:
-      "IMC sets up by President Cyril Ramaphosa to address political killings in KwaZulu-Natal.",   
+      "IMC set up by President Cyril Ramaphosa to address political killings in KwaZulu-Natal.",   
       link:"https://www.sabcnews.com/sabcnews/ministerial-committee-to-look-into-kzn-political-killings/?utm_source=chatgpt.com" 
     },
     {
@@ -17,20 +17,27 @@ export default function Timeline() {
     },
     {
       id: "03",
-      title: "Media Briefing",
-      date: "06 July 2025",
+      title: "Disbandment of PKTT",
+      date: "31 December 2024",
       description:
-      "By Lt Gen. Mkhwanazi on criminality, political interference, and corruption within the SAPS afftecting PKTT." ,
+        "Minister of Police, Senzo Mchunu gives directive for the National Political Killings Task Team to be disbanded.",
     },
     {
       id: "04",
+      title: "Media Briefing",
+      date: "06 July 2025",
+      description:
+      "Lt Gen. Mkhwanazi raises alarm on criminality, political interference, and corruption within the SAPS afftecting PKTT." ,
+    },
+    {
+      id: "05",
       title: "Madlanga Commission Day 1",
       date: "17 September 2025",
       description:
         "The first day of the Madlanga Commission hearings into political killings and institutional accountability.",
     },
     {
-      id: "05",
+      id: "06",
       title: "Ad Hoc Committee",
       date: "8 October 2025",
       description:

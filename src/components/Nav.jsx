@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 export default function Nav() {
 
     return (
@@ -9,7 +10,7 @@ export default function Nav() {
             <h2>Key Organisations and Individuals</h2>
            </div>
             <div className="cursor-pointer hover:border-b-2">
-            <h2>Testimony</h2>
+                <Link to="/testimony">Testimony</Link>
            </div>
         </nav>
     )

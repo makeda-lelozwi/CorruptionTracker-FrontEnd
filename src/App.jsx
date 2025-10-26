@@ -1,19 +1,13 @@
 import './App.css';
-import LatestNewsHeadline from './components/LatestNews';
-import Timeline from './components/Timeline';
-import Nav from './components/Nav';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home.jsx';
 
 function App() {
  
   return (
-    <div className="min-h-screen flex flex-col">
-      < Nav />
-    <div className='flex-1 flex items-center justify-center'>
-      <LatestNewsHeadline/>
-    </div>
-    <Timeline/>
-    </div>
-    
+   <Routes>
+    <Route path='/' element={<Home/>}/>
+   </Routes>
 
   )
 }

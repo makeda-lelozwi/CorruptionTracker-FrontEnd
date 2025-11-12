@@ -8,7 +8,7 @@ export function Meeting({ meeting }) {
       setShowSummary(!showSummary);
     };
   return (
-    <div className="meeting p-4 border rounded-lg">
+    <div className="meeting p-4 bg-gray-900">
       <h3 className="font-medium">{meeting.title}</h3>
       <p className="text-gray-200">{meeting.date}</p>
       <div className="flex">

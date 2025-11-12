@@ -48,7 +48,7 @@ export function Testimony() {
   }, []);
   
   return <div className="px-2">
-   <div className="cursor-pointer hover:border-b-2">
+   <div className="cursor-pointer">
       <Link to="/">Back to Home Page</Link>
     </div>
     {loading && <div className="flex items-center justify-center min-h-screen"><p className="text-white ">Loading Inquiry Sessions...</p></div>}

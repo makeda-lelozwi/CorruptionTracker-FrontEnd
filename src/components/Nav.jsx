@@ -4,7 +4,7 @@ export default function Nav() {
     return (
         <nav className="p-4 flex flex-col items-end">
            <div className="cursor-pointer hover:border-b-2">
-            <h2>Allegations</h2>
+            <Link to="/allegations">Allegations</Link>
            </div>
            <div className="cursor-pointer hover:border-b-2">
             <h2>Key Organisations and Individuals</h2>

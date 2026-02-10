@@ -5,8 +5,9 @@ export function Allegations() {
         <Link to="/">Back to Home Page</Link>
         <div className="p-8">
              
-            <div className="flex items-center mb-6 justify-center">
+            <div className="flex flex-col items-center mb-6 justify-center">
                 <h1 className=" mb-4 ">Allegations made by Lieutenant General Mkhwanazi on 6 July 2025</h1>
+                <a className=" font-bold text-amber-300" target="blank" href="https://www.politicsweb.co.za/documents/transcript-nhlanhla-mkhwanazis-bombshell-press-con?utm_source=chatgpt.com"> The General's full media briefing transcript</a>
             </div>
            
             <p className="mb-6 uppercase text-2xl text-pretty">A sophisticated criminal syndicate has infiltrated law enforcement and intelligence structures in South Africa</p>
@@ -113,7 +114,6 @@ export function Allegations() {
                 </ul>           
             </div>
 
-           <a target="blank" href="https://www.politicsweb.co.za/documents/transcript-nhlanhla-mkhwanazis-bombshell-press-con?utm_source=chatgpt.com"> A link to the Genral's full media briefing transcript.</a>
         </div>
     </>
         

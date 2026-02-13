@@ -16,7 +16,7 @@ export default function LatestNewsHeadline() {
         return response.json();
       })
       .then(data => {
-        setNews(data.news[0] || []);
+        setNews(data.news);
         setLoading(false);
       })
       .catch(error => {
@@ -46,7 +46,9 @@ export default function LatestNewsHeadline() {
         {news ? (
              <div className="flex flex-col gap-2 justify-center items-center ">
                 <h3>{news.title}</h3>
-                <p className="italic text-gray-300 text-xs">{news.date}</p>
+                <p className="italic text-gray-300 text-xs">
+                    {new Date(news.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
+                </p>
                 <a 
                   href={news.link} 
                   target="_blank" 

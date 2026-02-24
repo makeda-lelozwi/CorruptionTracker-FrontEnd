@@ -1,31 +1,17 @@
-import { useEffect, useState } from "react"
+import { useQuery } from "@tanstack/react-query";
+import { getLatestHeadline } from "../api/Api";
 
 export default function LatestNewsHeadline() {
-   const [news, setNews] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const {
+    data: news,
+    isLoading,
+    error,
+  } = useQuery({
+    queryKey: ["latest-headline"],
+    queryFn: getLatestHeadline,
+  });
 
-  useEffect(() => {
-    const API_URL = 'https://corruptiontracker-1.onrender.com/';
-    
-    fetch(API_URL)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then(data => {
-        setNews(data.news);
-        setLoading(false);
-      })
-      .catch(error => {
-        setError(error.message);
-        setLoading(false);
-      });
-  }, []);
-
-  if (loading) {
+  if (isLoading) {
     return (
       <div className="App">
         <div className="loading">Loading Parliament News...</div>
@@ -36,7 +22,7 @@ export default function LatestNewsHeadline() {
   if (error) {
     return (
       <div className="App">
-        <div className="error">Error: {error}</div>
+        <div className="error">Error: {error.message}</div>
       </div>
     );
   }

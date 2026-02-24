@@ -11,6 +11,26 @@ const officials = [
   "General Shadrack Sibiya",
   "Minister Senzo Mchunu",
   "Gen Bheki Cele",
+  "Deputy Minister Cassel Mathale",
+  "Deputy Minister Shela Boshielo",
+  "Minister Firoz Cachalia",
+  "Adv Andrea Johnson",
+  "Adv Shamila Bahoti",
+  "SAPS Chief of Staff Cedrick Nkabinde",
+  "Mary De Haas",
+  "Lt Gen Molefe Fani",
+  "Lt Gen Puleng Dimpane",
+  "Mr Vusimuzi Matlala",
+  "Lt Gen Khomotso Phahlane",
+  "Lt. General Dumisani Khumalo",
+  "Lt. Gen Dumisani Khumalo",
+  "Mr Robert McBride",
+  "Mr Julius Mkhwanazi",
+  "Oral evidence by Members of the Public",
+  "Hon Kohler Barnard",
+  "Mr Paul O’Sullivan",
+  "Mr Brown Mokgotsi",
+  
 ];
 
 const groupMeetingsByOfficial = (meetings) => {
